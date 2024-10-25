@@ -38,7 +38,9 @@ jobs:
             - name: Testes E2E (end-to-end)
               run: yarn run e2e    
              
+            # passed, failed, cancelled  
             - uses: actions/upload-artifact@v3
+              if: ${{ !cancelled() }}
               with:
                 name: relatorio-de-testes
                 path: ./playwight-reports
