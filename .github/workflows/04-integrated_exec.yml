@@ -72,7 +72,7 @@ jobs:
 
       - name: Instalando Playwright
         run: yarn playwright install
-      
+
       - name: Subir aplicação local
         run: yarn start &
 
