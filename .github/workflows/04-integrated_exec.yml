@@ -25,6 +25,15 @@ jobs:
       steps:       
         - uses: actions/checkout@v4
 
+        - name: Instalando Yarn
+          run: npm install -g yarn
+
+        - name: Instalando dependências
+          run: yarn
+        
+        - name: Padronização de código (Lint)
+          run: yarn lint
+
 # descricao do job
     e2e-tests:
 
