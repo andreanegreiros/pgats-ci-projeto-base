@@ -1,7 +1,7 @@
 # CI de Nível 04 - Disparo dentro do fluxo de CI de desenvolvimento
 
 # nome que vai aparecer nas opções de pipelines
-name: 'Execução integrada'
+name: 'Execução Integrada'
 
 # triggers OU gatilhos de execução
   # gatilho de execução manual - workflow_dispactch
