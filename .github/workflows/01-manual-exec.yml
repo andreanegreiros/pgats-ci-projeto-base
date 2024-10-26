@@ -39,8 +39,10 @@ jobs:
               run: yarn run e2e    
              
             # passed, failed, cancelled  
-            - uses: actions/upload-artifact@v3
-              if: ${{ !cancelled() }}
+            - name: Upload Artifact
+              uses: actions/upload-artifact@v4
               with:
                 name: relatorio-de-testes
-                path: ./playwright-report
+                path: ./playwright-reports
+                if-no-files-found: warn
+                include-hidden-files: false
